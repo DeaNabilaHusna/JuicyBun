@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JuicyBun!</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- navbar start -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <svg fill="#ffffff" height="35px" length="auto" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        enable-background="new 0 0 512 512">
+                        <g>
+                            <g>
+                                <g>
+                                    <g>
+                                        <path
+                                            d="m480.7,228.6h-449.2c-11.3,0-20.4-9.1-20.4-20.4v-29.7c-1.77636e-15-92.4 75.1-167.5 167.4-167.5h155.1c92.3,0 167.5,75.1 167.5,167.5v29.7c0,11.2-9.2,20.4-20.4,20.4zm-428.8-40.9h408.3v-9.3c0-69.8-56.8-126.6-126.6-126.6h-155.1c-69.8,0-126.6,56.8-126.6,126.6v9.3z" />
+                                    </g>
+                                    <g>
+                                        <path
+                                            d="M435.4,501H76.7c-36.2,0-65.6-29.4-65.6-65.6v-54.2c0-11.3,9.1-20.4,20.4-20.4h449.1c11.3,0,20.4,9.1,20.4,20.4v54.2      C501.1,471.6,471.6,501,435.4,501z M51.9,401.6v33.8c0,13.7,11.1,24.8,24.8,24.8h358.7c13.7,0,24.8-11.1,24.8-24.8v-33.8H51.9z" />
+                                    </g>
+                                    <g>
+                                        <path
+                                            d="m31.5,334.7c-7.2,0-14.2-3.8-17.9-10.6-5.4-9.9-1.8-22.3 8.1-27.7l42-23c25.1-13.8 56.3-13.8 81.5,0 13,7.1 29.2,7.1 42.2,0l18.9-10.4c25.1-13.8 56.4-13.8 81.5,0l17.5,9.6c13,7.1 29.2,7.1 42.2,0l20.5-11.3c25.1-13.8 56.3-13.8 81.5,0l41.1,22.6c9.9,5.4 13.5,17.8 8.1,27.7-5.4,9.9-17.8,13.5-27.7,8.1l-41.1-22.5c-13-7.1-29.2-7.1-42.2,0l-20.5,11.3c-25.1,13.8-56.3,13.8-81.5,0l-17.5-9.6c-13-7.1-29.2-7.1-42.2,0l-19,10.2c-25.1,13.8-56.4,13.8-81.5,0-13-7.1-29.2-7.1-42.2,0l-42,23c-3.1,1.8-6.5,2.6-9.8,2.6z" />
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                    <a href="#">Juicy<span>Bun</span></a>
+                </div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a class="active" href="menu.html">Menu</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li>
+                        <div class="icon">
+                            <a href=""><svg width="25px" length="auto" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M15.7955 15.8111L21 21M18 10.5C18 14.6421 14.6421 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3C14.6421 3 18 6.35786 18 10.5Z"
+                                        stroke="#ffffff" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                            <a href="cart.html">
+                                <svg width="25px" length="auto" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M6.29977 5H21L19 12H7.37671M20 16H8L6 3H3M9 20C9 20.5523 8.55228 21 8 21C7.44772 21 7 20.5523 7 20C7 19.4477 7.44772 19 8 19C8.55228 19 9 19.4477 9 20ZM20 20C20 20.5523 19.5523 21 19 21C18.4477 21 18 20.5523 18 20C18 19.4477 18.4477 19 19 19C19.5523 19 20 19.4477 20 20Z"
+                                        stroke="#ffffff" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg></a>
+                        </div>
+                    </li>
+                    <a href="menu.html">
+                        <button class="order">Order Now</button>
+                    </a>
+                </ul>
+                <label class="hamburger">
+                    <input class="menu" type="checkbox">
+                    <svg viewBox="0 0 30 30">
+                        <path class="line line-top-bottom"
+                            d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22">
+                        </path>
+                        <path class="line" d="M7 16 27 16"></path>
+                    </svg> </label>
+            </nav>
+        </div>
+    </header>
+    <section class="menu-heading">
+        <div class="menu-filter">
+            <svg width="25px" height="auto" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 7H20" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M7 12L17 12" stroke="#000000" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                <path d="M11 17H13" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <span>Filter</span>
+        </div>
+        <div class="menu-search">
+            <svg width="25px" height="auto" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M15.7955 15.8111L21 21M18 10.5C18 14.6421 14.6421 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3C14.6421 3 18 6.35786 18 10.5Z"
+                    stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <span>Search</span>
+        </div>
+    </section>
+    <section class="menu-list">
+        <div class="menu-list-row">
+            <div class="box">
+                <div class="img">
+                    <img src="images/burger1_delicious-pizza-burger-beef-patty-isolated-transparent-background_812337-12377-removebg-preview.png"
+                        alt="" class="menu-img">
+                </div>
+                <div class="menu-content">
+                    <h3 class="menu-title">Double Cheese Burger</h3>
+                    <span class="menu-price">Rp 25.000</span>
+                    <div class="orderNow">
+                        <a href="product-single.html">
+                            <button>Order Now</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img">
+                    <img src="images/burger2_delicious-philly-pretzel-burger-isolated-transparent-background_812337-12372-removebg-preview.png"
+                        alt="" class="menu-img">
+                </div>
+                <div class="menu-content">
+                    <h3 class="menu-title">Double Cheese Burger</h3>
+                    <span class="menu-price">Rp 25.000</span>
+                    <div class="orderNow">
+                        <a href="product-single.html">
+                            <button>Order Now</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img">
+                    <img src="images/burger3_delicious-philly-pretzel-burger-isolated-transparent-background_812337-12373-removebg-preview.png"
+                        alt="" class="menu-img">
+                </div>
+                <div class="menu-content">
+                    <h3 class="menu-title">Double Cheese Burger</h3>
+                    <span class="menu-price">Rp 25.000</span>
+                    <div class="orderNow">
+                        <a href="product-single.html">
+                            <button>Order Now</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img">
+                    <img src="images/burger4_delicious-pizza-burger-beef-patty-isolated-transparent-background_812337-12376-removebg-preview.png"
+                        alt="" class="menu-img">
+                </div>
+                <div class="menu-content">
+                    <h3 class="menu-title">Double Cheese Burger</h3>
+                    <span class="menu-price">Rp 25.000</span>
+                    <div class="orderNow">
+                        <a href="product-single.html">
+                            <button>Order Now</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img">
+                    <img src="images/burger5_delicious-peking-duck-burger-isolated-transparent-background_812337-12364-removebg-preview.png"
+                        alt="" class="menu-img">
+                </div>
+                <div class="menu-content">
+                    <h3 class="menu-title">Double Cheese Burger</h3>
+                    <span class="menu-price">Rp 25.000</span>
+                    <div class="orderNow">
+                        <button>Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img">
+                    <img src="images/burger6_delicious-peanut-butter-sriracha-fried-chicken-burger-isolated-transparent-background_812337-12358-removebg-preview.png"
+                        alt="" class="menu-img">
+                </div>
+                <div class="menu-content">
+                    <h3 class="menu-title">Double Cheese Burger</h3>
+                    <span class="menu-price">Rp 25.000</span>
+                    <div class="orderNow">
+                        <a href="product-single.html">
+                            <button>Order Now</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img">
+                    <img src="images/burger7_delicious-peanut-butter-sriracha-fried-chicken-burger-isolated-transparent-background_812337-12361-removebg-preview.png"
+                        alt="" class="menu-img">
+                </div>
+                <div class="menu-content">
+                    <h3 class="menu-title">Double Cheese Burger</h3>
+                    <span class="menu-price">Rp 25.000</span>
+                    <div class="orderNow">
+                        <a href="product-single.html">
+                            <button>Order Now</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img">
+                    <img src="images/burger8_delicious-peanut-butter-sriracha-fried-chicken-burger-isolated-transparent-background_812337-12363-removebg-preview.png"
+                        alt="" class="menu-img">
+                </div>
+                <div class="menu-content">
+                    <h3 class="menu-title">Double Cheese Burger</h3>
+                    <span class="menu-price">Rp 25.000</span>
+                    <div class="orderNow">
+                        <a href="product-single.html">
+                            <button>Order Now</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img">
+                    <img src="images/burger9_delicious-pulled-pork-coleslaw-burger-isolated-transparent-background_812337-12387-removebg-preview.png"
+                        alt="" class="menu-img">
+                </div>
+                <div class="menu-content">
+                    <h3 class="menu-title">Double Cheese Burger</h3>
+                    <span class="menu-price">Rp 25.000</span>
+                    <div class="orderNow">
+                        <a href="product-single.html">
+                            <button>Order Now</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img">
+                    <img src="images/burger10_delicious-pulled-pork-coleslaw-burger-isolated-transparent-background_812337-12390-removebg-preview.png"
+                        alt="" class="menu-img">
+                </div>
+                <div class="menu-content">
+                    <h3 class="menu-title">Double Cheese Burger</h3>
+                    <span class="menu-price">Rp 25.000</span>
+                    <div class="orderNow">
+                        <a href="product-single.html">
+                            <button>Order Now</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img">
+                    <img src="images/burger11_delicious-pulled-pork-coleslaw-burger-isolated-transparent-background_812337-12391-removebg-preview.png"
+                        alt="" class="menu-img">
+                </div>
+                <div class="menu-content">
+                    <h3 class="menu-title">Double Cheese Burger</h3>
+                    <span class="menu-price">Rp 25.000</span>
+                    <div class="orderNow">
+                        <a href="product-single.html">
+                            <button>Order Now</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img">
+                    <img src="images/burger12_delicious-reuben-burger-corned-beef-isolated-transparent-background_812337-12409-removebg-preview.png"
+                        alt="" class="menu-img">
+                </div>
+                <div class="menu-content">
+                    <h3 class="menu-title">Double Cheese Burger</h3>
+                    <span class="menu-price">Rp 25.000</span>
+                    <div class="orderNow">
+                        <a href="product-single.html">
+                            <button>Order Now</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img">
+                    <img src="images/burger13_delicious-reuben-burger-corned-beef-isolated-transparent-background_812337-12411-removebg-preview.png"
+                        alt="" class="menu-img">
+                </div>
+                <div class="menu-content">
+                    <h3 class="menu-title">Double Cheese Burger</h3>
+                    <span class="menu-price">Rp 25.000</span>
+                    <div class="orderNow">
+                        <a href="product-single.html">
+                            <button>Order Now</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img">
+                    <img src="images/burger14_delicious-roasr-beef-horseradish-burger-isolated-transparent-background_812337-12416-removebg-preview.png"
+                        alt="" class="menu-img">
+                </div>
+                <div class="menu-content">
+                    <h3 class="menu-title">Double Cheese Burger</h3>
+                    <span class="menu-price">Rp 25.000</span>
+                    <div class="orderNow">
+                        <a href="product-single.html">
+                            <button>Order Now</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img">
+                    <img src="images/burger15_delicious-roasr-beef-horseradish-burger-isolated-transparent-background_812337-12417-removebg-preview.png"
+                        alt="" class="menu-img">
+                </div>
+                <div class="menu-content">
+                    <h3 class="menu-title">Double Cheese Burger</h3>
+                    <span class="menu-price">Rp 25.000</span>
+                    <div class="orderNow">
+                        <a href="product-single.html">
+                            <button>Order Now</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img">
+                    <img src="images/burger16_delicious-sausage-egg-breakfast-burger-isolated-transparent-background_812337-12426-removebg-preview.png"
+                        alt="" class="menu-img">
+                </div>
+                <div class="menu-content">
+                    <h3 class="menu-title">Double Cheese Burger</h3>
+                    <span class="menu-price">Rp 25.000</span>
+                    <div class="orderNow">
+                        <a href="product-single.html">
+                            <button>Order Now</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img">
+                    <img src="images/burger17_delicious-sausage-egg-breakfast-burger-isolated-transparent-background_812337-12427-removebg-preview.png"
+                        alt="" class="menu-img">
+                </div>
+                <div class="menu-content">
+                    <h3 class="menu-title">Double Cheese Burger</h3>
+                    <span class="menu-price">Rp 25.000</span>
+                    <div class="orderNow">
+                        <a href="product-single.html">
+                            <button>Order Now</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img">
+                    <img src="images/burger18_delicious-smoked-salmon-burger-isolated-transparent-background_812337-12445-removebg-preview.png"
+                        alt="" class="menu-img">
+                </div>
+                <div class="menu-content">
+                    <h3 class="menu-title">Double Cheese Burger</h3>
+                    <span class="menu-price">Rp 25.000</span>
+                    <div class="orderNow">
+                        <a href="product-single.html">
+                            <button>Order Now</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img">
+                    <img src="images/burger19_delicious-smoked-salmon-burger-isolated-transparent-background_812337-12446__1_-removebg-preview.png"
+                        alt="" class="menu-img">
+                </div>
+                <div class="menu-content">
+                    <h3 class="menu-title">Double Cheese Burger</h3>
+                    <span class="menu-price">Rp 25.000</span>
+                    <div class="orderNow">
+                        <a href="product-single.html">
+                            <button>Order Now</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img">
+                    <img src="images/burger22_magnificent-jalapeo-popper-burger-isolated-white-background_812337-12679-removebg-preview.png"
+                        alt="" class="menu-img">
+                </div>
+                <div class="menu-content">
+                    <h3 class="menu-title">Double Cheese Burger</h3>
+                    <span class="menu-price">Rp 25.000</span>
+                    <div class="orderNow">
+                        <a href="product-single.html">
+                            <button>Order Now</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="container">
+            <div class="product">
+                <a href="">
+                    <img src="images/burger1_delicious-pizza-burger-beef-patty-isolated-transparent-background_812337-12377-removebg-preview.png" alt="">
+                    <div class="menu-content">
+                        <h3 class="menu-title">Double Cheese Burger</h3>
+                        <span class="menu-price">Rp 25.000</span>
+                        <div class="orderNow">
+                            <button>Order Now</button>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="">
+                    <img src="images/burger2_delicious-philly-pretzel-burger-isolated-transparent-background_812337-12372-removebg-preview.png" alt="">
+                    <div class="menu-content">
+                        <h3 class="menu-title">Double Cheese Burger</h3>
+                        <span class="menu-price">Rp 25.000</span>
+                        <div class="orderNow">
+                            <button>Order Now</button>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="">
+                    <img src="images/burger3_delicious-philly-pretzel-burger-isolated-transparent-background_812337-12373-removebg-preview.png" alt="">
+                    <div class="menu-content">
+                        <h3 class="menu-title">Double Cheese Burger</h3>
+                        <span class="menu-price">Rp 25.000</span>
+                        <div class="orderNow">
+                            <button>Order Now</button>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="">
+                    <img src="images/burger4_delicious-pizza-burger-beef-patty-isolated-transparent-background_812337-12376-removebg-preview.png" alt="">
+                    <div class="menu-content">
+                        <h3 class="menu-title">Double Cheese Burger</h3>
+                        <span class="menu-price">Rp 25.000</span>
+                        <div class="orderNow">
+                            <button>Order Now</button>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="">
+                    <img src="images/burger5_delicious-peking-duck-burger-isolated-transparent-background_812337-12364-removebg-preview.png" alt="">
+                    <div class="menu-content">
+                        <h3 class="menu-title">Double Cheese Burger</h3>
+                        <span class="menu-price">Rp 25.000</span>
+                        <div class="orderNow">
+                            <button>Order Now</button>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="">
+                    <img src="images/burger6_delicious-peanut-butter-sriracha-fried-chicken-burger-isolated-transparent-background_812337-12358-removebg-preview.png" alt="">
+                    <div class="menu-content">
+                        <h3 class="menu-title">Double Cheese Burger</h3>
+                        <span class="menu-price">Rp 25.000</span>
+                        <div class="orderNow">
+                            <button>Order Now</button>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="">
+                    <img src="images/burger7_delicious-peanut-butter-sriracha-fried-chicken-burger-isolated-transparent-background_812337-12361-removebg-preview.png" alt="">
+                    <div class="menu-content">
+                        <h3 class="menu-title">Double Cheese Burger</h3>
+                        <span class="menu-price">Rp 25.000</span>
+                        <div class="orderNow">
+                            <button>Order Now</button>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="">
+                    <img src="images/burger8_delicious-peanut-butter-sriracha-fried-chicken-burger-isolated-transparent-background_812337-12363-removebg-preview.png" alt="">
+                    <div class="menu-content">
+                        <h3 class="menu-title">Double Cheese Burger</h3>
+                        <span class="menu-price">Rp 25.000</span>
+                        <div class="orderNow">
+                            <button>Order Now</button>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="">
+                    <img src="images/burger9_delicious-pulled-pork-coleslaw-burger-isolated-transparent-background_812337-12387-removebg-preview.png" alt="">
+                    <div class="menu-content">
+                        <h3 class="menu-title">Double Cheese Burger</h3>
+                        <span class="menu-price">Rp 25.000</span>
+                        <div class="orderNow">
+                            <button>Order Now</button>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="">
+                    <img src="images/burger10_delicious-pulled-pork-coleslaw-burger-isolated-transparent-background_812337-12390-removebg-preview.png" alt="">
+                    <div class="menu-content">
+                        <h3 class="menu-title">Double Cheese Burger</h3>
+                        <span class="menu-price">Rp 25.000</span>
+                        <div class="orderNow">
+                            <button>Order Now</button>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="">
+                    <img src="images/burger11_delicious-pulled-pork-coleslaw-burger-isolated-transparent-background_812337-12391-removebg-preview.png" alt="">
+                    <div class="menu-content">
+                        <h3 class="menu-title">Double Cheese Burger</h3>
+                        <span class="menu-price">Rp 25.000</span>
+                        <div class="orderNow">
+                            <button>Order Now</button>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="">
+                    <img src="images/burger12_delicious-reuben-burger-corned-beef-isolated-transparent-background_812337-12409-removebg-preview.png" alt="">
+                    <div class="menu-content">
+                        <h3 class="menu-title">Double Cheese Burger</h3>
+                        <span class="menu-price">Rp 25.000</span>
+                        <div class="orderNow">
+                            <button>Order Now</button>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="">
+                    <img src="images/burger13_delicious-reuben-burger-corned-beef-isolated-transparent-background_812337-12411-removebg-preview.png" alt="">
+                    <div class="menu-content">
+                        <h3 class="menu-title">Double Cheese Burger</h3>
+                        <span class="menu-price">Rp 25.000</span>
+                        <div class="orderNow">
+                            <button>Order Now</button>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="">
+                    <img src="images/burger14_delicious-roasr-beef-horseradish-burger-isolated-transparent-background_812337-12416-removebg-preview.png" alt="">
+                    <div class="menu-content">
+                        <h3 class="menu-title">Double Cheese Burger</h3>
+                        <span class="menu-price">Rp 25.000</span>
+                        <div class="orderNow">
+                            <button>Order Now</button>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="">
+                    <img src="images/burger15_delicious-roasr-beef-horseradish-burger-isolated-transparent-background_812337-12417-removebg-preview.png" alt="">
+                    <div class="menu-content">
+                        <h3 class="menu-title">Double Cheese Burger</h3>
+                        <span class="menu-price">Rp 25.000</span>
+                        <div class="orderNow">
+                            <button>Order Now</button>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="">
+                    <img src="images/burger16_delicious-sausage-egg-breakfast-burger-isolated-transparent-background_812337-12426-removebg-preview.png" alt="">
+                    <div class="menu-content">
+                        <h3 class="menu-title">Double Cheese Burger</h3>
+                        <span class="menu-price">Rp 25.000</span>
+                        <div class="orderNow">
+                            <button>Order Now</button>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="">
+                    <img src="images/burger17_delicious-sausage-egg-breakfast-burger-isolated-transparent-background_812337-12427-removebg-preview.png" alt="">
+                    <div class="menu-content">
+                        <h3 class="menu-title">Double Cheese Burger</h3>
+                        <span class="menu-price">Rp 25.000</span>
+                        <div class="orderNow">
+                            <button>Order Now</button>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="">
+                    <img src="images/burger18_delicious-smoked-salmon-burger-isolated-transparent-background_812337-12445-removebg-preview.png" alt="">
+                    <div class="menu-content">
+                        <h3 class="menu-title">Double Cheese Burger</h3>
+                        <span class="menu-price">Rp 25.000</span>
+                        <div class="orderNow">
+                            <button>Order Now</button>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div> -->
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="">about us</a></li>
+                        <li><a href="">our menu</a></li>
+                        <li><a href="">privacy policy</a></li>
+                        <li><a href="">affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>recent blogs</h4>
+                    <ul class="blog">
+                        <li><a href=""><img src="images/blog/sander-dalhuisen-nA6Xhnq2Od8-unsplash.jpg" alt="">
+                                <div class="text">
+                                    <h3 class="ft-recent-blog"><a href="#">Even the all-powerful Pointing has no control
+                                            about</a>
+                                    </h3>
+                                    <div class="meta">
+                                        <div><a href="#"><span class="icon-calendar"></span> Sept 15, 2018</a></div>
+                                    </div>
+                                </div>
+                            </a></li>
+                        <li><a href=""><img src="images/blog/sander-dalhuisen-nA6Xhnq2Od8-unsplash.jpg" alt="">
+                                <div class="text">
+                                    <h3 class="ft-recent-blog"><a href="#">Even the all-powerful Pointing has no control
+                                            about</a>
+                                    </h3>
+                                    <div class="meta">
+                                        <div><a href="#"><span class="icon-calendar"></span> Sept 15, 2018</a></div>
+                                    </div>
+                                </div>
+                            </a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">shipping</a></li>
+                        <li><a href="">returns</a></li>
+                        <li><a href="">order status</a></li>
+                        <li><a href="">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social">
+                        <a href="#"><svg width="35px" length="auto" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"
+                                    fill="#0F0F0F" />
+                                <path
+                                    d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z"
+                                    fill="#0F0F0F" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z"
+                                    fill="#0F0F0F" />
+                            </svg></a>
+                        <a href="#"><svg fill="#000000" width="35px" length="auto" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 2.03998C6.5 2.03998 2 6.52998 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.84998C10.44 7.33998 11.93 5.95998 14.22 5.95998C15.31 5.95998 16.45 6.14998 16.45 6.14998V8.61998H15.19C13.95 8.61998 13.56 9.38998 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96C15.9164 21.5878 18.0622 20.3855 19.6099 18.57C21.1576 16.7546 22.0054 14.4456 22 12.06C22 6.52998 17.5 2.03998 12 2.03998Z" />
+                            </svg></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js">
+    </script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

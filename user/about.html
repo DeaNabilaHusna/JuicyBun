@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JuicyBun!</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <svg fill="#ffffff" height="35px" length="auto" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        enable-background="new 0 0 512 512">
+                        <g>
+                            <g>
+                                <g>
+                                    <g>
+                                        <path
+                                            d="m480.7,228.6h-449.2c-11.3,0-20.4-9.1-20.4-20.4v-29.7c-1.77636e-15-92.4 75.1-167.5 167.4-167.5h155.1c92.3,0 167.5,75.1 167.5,167.5v29.7c0,11.2-9.2,20.4-20.4,20.4zm-428.8-40.9h408.3v-9.3c0-69.8-56.8-126.6-126.6-126.6h-155.1c-69.8,0-126.6,56.8-126.6,126.6v9.3z" />
+                                    </g>
+                                    <g>
+                                        <path
+                                            d="M435.4,501H76.7c-36.2,0-65.6-29.4-65.6-65.6v-54.2c0-11.3,9.1-20.4,20.4-20.4h449.1c11.3,0,20.4,9.1,20.4,20.4v54.2      C501.1,471.6,471.6,501,435.4,501z M51.9,401.6v33.8c0,13.7,11.1,24.8,24.8,24.8h358.7c13.7,0,24.8-11.1,24.8-24.8v-33.8H51.9z" />
+                                    </g>
+                                    <g>
+                                        <path
+                                            d="m31.5,334.7c-7.2,0-14.2-3.8-17.9-10.6-5.4-9.9-1.8-22.3 8.1-27.7l42-23c25.1-13.8 56.3-13.8 81.5,0 13,7.1 29.2,7.1 42.2,0l18.9-10.4c25.1-13.8 56.4-13.8 81.5,0l17.5,9.6c13,7.1 29.2,7.1 42.2,0l20.5-11.3c25.1-13.8 56.3-13.8 81.5,0l41.1,22.6c9.9,5.4 13.5,17.8 8.1,27.7-5.4,9.9-17.8,13.5-27.7,8.1l-41.1-22.5c-13-7.1-29.2-7.1-42.2,0l-20.5,11.3c-25.1,13.8-56.3,13.8-81.5,0l-17.5-9.6c-13-7.1-29.2-7.1-42.2,0l-19,10.2c-25.1,13.8-56.4,13.8-81.5,0-13-7.1-29.2-7.1-42.2,0l-42,23c-3.1,1.8-6.5,2.6-9.8,2.6z" />
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                    <a href="#">Juicy<span>Bun</span></a>
+                </div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a class="active" href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li>
+                        <div class="icon">
+                            <a href=""><svg width="25px" length="auto" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M15.7955 15.8111L21 21M18 10.5C18 14.6421 14.6421 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3C14.6421 3 18 6.35786 18 10.5Z"
+                                        stroke="#ffffff" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                            <a href="cart.html">
+                                <svg width="25px" length="auto" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M6.29977 5H21L19 12H7.37671M20 16H8L6 3H3M9 20C9 20.5523 8.55228 21 8 21C7.44772 21 7 20.5523 7 20C7 19.4477 7.44772 19 8 19C8.55228 19 9 19.4477 9 20ZM20 20C20 20.5523 19.5523 21 19 21C18.4477 21 18 20.5523 18 20C18 19.4477 18.4477 19 19 19C19.5523 19 20 19.4477 20 20Z"
+                                        stroke="#ffffff" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg></a>
+                        </div>
+                    </li>
+                    <a href="menu.html">
+                    <button class="order">Order Now</button>
+                </a>
+                </ul>
+                <label class="hamburger">
+                    <input class="menu" type="checkbox">
+                    <svg viewBox="0 0 30 30">
+                        <path class="line line-top-bottom"
+                            d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22">
+                        </path>
+                        <path class="line" d="M7 16 27 16"></path>
+                    </svg> </label>
+            </nav>
+        </div>
+    </header>
+    <section class="about-page">
+        <div class="home-about"></div>
+        <div class="container">
+            <div class="heading" >
+                <h1 class="section-title">About</h1>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="intro">
+        <div class="kotak1">
+
+            <div class="container-wrap">
+                <div class="intro-content">
+                    <div class="info">
+                        <div class="info-row">
+                            <div class="text-box">
+                                <div class="icon"><svg width="20px" height="20px" viewBox="0 0 15 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        
+                                    <!-- <title>call [#192]</title>
+                                    <desc>Created with Sketch.</desc>
+                                    <defs>
+                                
+                                </defs> -->
+                                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g id="Dribbble-Light-Preview" transform="translate(-103.000000, -7321.000000)" fill="#FFFFFF">
+                                            <g id="icons" transform="translate(56.000000, 160.000000)">
+                                                <path d="M61.7302966,7173.99596 C61.2672966,7175.40296 59.4532966,7176.10496 58.1572966,7175.98796 C56.3872966,7175.82796 54.4612966,7174.88896 52.9992966,7173.85496 C50.8502966,7172.33496 48.8372966,7169.98396 47.6642966,7167.48896 C46.8352966,7165.72596 46.6492966,7163.55796 47.8822966,7161.95096 C48.3382966,7161.35696 48.8312966,7161.03996 49.5722966,7161.00296 C50.6002966,7160.95296 50.7442966,7161.54096 51.0972966,7162.45696 C51.3602966,7163.14196 51.7112966,7163.84096 51.9072966,7164.55096 C52.2742966,7165.87596 50.9912966,7165.93096 50.8292966,7167.01396 C50.7282966,7167.69696 51.5562966,7168.61296 51.9302966,7169.09996 C52.6632966,7170.05396 53.5442966,7170.87696 54.5382966,7171.50296 C55.1072966,7171.86196 56.0262966,7172.50896 56.6782966,7172.15196 C57.6822966,7171.60196 57.5872966,7169.90896 58.9912966,7170.48196 C59.7182966,7170.77796 60.4222966,7171.20496 61.1162966,7171.57896 C62.1892966,7172.15596 62.1392966,7172.75396 61.7302966,7173.99596 C61.4242966,7174.92396 62.0362966,7173.06796 61.7302966,7173.99596" id="call-[#192]">
+                                
+                                </path>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg></div>
+                                <div class="text">
+                                    <h3>000 (123) 456 7890</h3>
+                                    <p>A small river named Duden flows</p>
+                                </div>
+                            </div>
+                            <div class="text-box">
+                                <div class="icon"><svg fill="#FFFFFF" width="20px" height="20px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M12,2 C12.5522847,2 13,2.44771525 13,3 L13.0009551,4.06201291 C16.6192832,4.51365373 19.4869953,7.38169805 19.9381291,11.0001836 L21,11 C21.5522847,11 22,11.4477153 22,12 C22,12.5522847 21.5522847,13 21,13 L19.938005,13.0008119 C19.4864693,16.618828 16.6189513,19.4863877 13.0009551,19.9379871 L13,21 C13,21.5522847 12.5522847,22 12,22 C11.4477153,22 11,21.5522847 11,21 L11.0000487,19.9381123 C7.38160685,19.4869215 4.51361653,16.6192066 4.06200545,13.0008953 L3,13 C2.44771525,13 2,12.5522847 2,12 C2,11.4477153 2.44771525,11 3,11 L4.06188125,11.0001003 C4.51309045,7.38131942 7.38127497,4.51311984 11.0000487,4.06188768 L11,3 C11,2.44771525 11.4477153,2 12,2 Z M12,6 C8.6862915,6 6,8.6862915 6,12 C6,15.3137085 8.6862915,18 12,18 C15.3137085,18 18,15.3137085 18,12 C18,8.6862915 15.3137085,6 12,6 Z M12,8 C14.209139,8 16,9.790861 16,12 C16,14.209139 14.209139,16 12,16 C9.790861,16 8,14.209139 8,12 C8,9.790861 9.790861,8 12,8 Z"/>
+                                  </svg></div>
+                                <div class="text">
+                                    <h3>198 West 21th Street</h3>
+                                    <p>Suite 721 New York NY 10016</p>
+                                </div>
+                            </div>
+                            <div class="text-box">
+                                <div class="icon"><svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 7V12H15M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg></div>
+                                <div class="text">
+                                    <h3>Open Monday-Friday</h3>
+                                    <p>8:00am - 9:00pm</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social">
+                        <ul class="social-icon">
+                            <li class="icon"><a href=""><svg width="25px" height="25px" viewBox="-5 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    
+                                <title>facebook [#176]</title>
+                                <desc>Created with Sketch.</desc>
+                                <defs>
+                            
+                            </defs>
+                                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <g id="Dribbble-Light-Preview" transform="translate(-385.000000, -7399.000000)" fill="#000000">
+                                        <g id="icons" transform="translate(56.000000, 160.000000)">
+                                            <path d="M335.821282,7259 L335.821282,7250 L338.553693,7250 L339,7246 L335.821282,7246 L335.821282,7244.052 C335.821282,7243.022 335.847593,7242 337.286884,7242 L338.744689,7242 L338.744689,7239.14 C338.744689,7239.097 337.492497,7239 336.225687,7239 C333.580004,7239 331.923407,7240.657 331.923407,7243.7 L331.923407,7246 L329,7246 L329,7250 L331.923407,7250 L331.923407,7259 L335.821282,7259 Z" id="facebook-[#176]">
+                            
+                            </path>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg></a></li>
+                            <li class="icon"><a href="#"><svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" fill="#0F0F0F"/>
+                                <path d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z" fill="#0F0F0F"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z" fill="#0F0F0F"/>
+                                </svg></a></li>
+                           
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div style="max-width: 25%; width:1000px;" class="kotak2"> -->
+
+        </div>
+    </section>
+
+    <!-- <section class="about-heading">
+        <div class="one-half-img"><img src="images/burger13_delicious-reuben-burger-corned-beef-isolated-transparent-background_812337-12411-removebg-preview.png" alt=""></div>
+
+        <div class="heading-section-about ">
+            <h2 class="heading">Welcome to <span class="flaticon-bun">Juicy</span>Bun</h2>
+        </div>
+
+        <p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have
+            been rewritten a thousand times and everything that was left from its origin would be the word "and" and
+            the Little Blind Text should turn around and return to its own, safe country. But nothing the copy said
+            could convince her and so it didn’t take long until a few insidious Copy Writers ambushed her, made her
+            drunk with Longe and Parole and dragged her into their agency, where they abused her for their.</p>
+        </div>
+        </div>
+    </section> -->
+    <div class="container-about">
+        <section class="about" id="about">
+            <div class="about-img">
+                <img src="images/burger16_delicious-sausage-egg-breakfast-burger-isolated-transparent-background_812337-12426-removebg-preview.png" alt="">
+            </div>
+            <div class="about-content">
+                <h3>Why Choose Us</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, dicta eos placeat laboriosam
+                    voluptate consequuntur suscipit modi dignissimos quae deserunt doloremque ipsam eius distinctio
+                    quidem dolores! Explicabo doloremque et facere.lorLorem ipsum dolor sit amet consectetur,
+                    adipisicing elit. Voluptatem, dicta eos placeat laboriosam
+                    voluptate consequuntur suscipit modi dignissimos quae deserunt doloremque ipsam eius distinctio
+                    quidem dolores! Explicabo doloremque et facere.lor</p>
+                <!-- <div class="btn">
+                    <button>Read More</button>
+                </div> -->
+            </div>
+        </section>
+    </div>
+    <section class="chef">
+        <div class="container">
+            <div class="chef-row">
+                <div class="heading">
+                    <h2 class="section-title">Our Chef</h2>
+                    <p class="sub-title">Far far away, behind the word mountains, far from the countries Vokalia and
+                        Consonantia, there live the blind texts.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="chef-col">
+                    <div class="staff">
+                        <div class="img" style="background-image: url(images/person_1.jpg);"></div>
+                        <div class="info">
+                            <h3><a href="teacher-single.html">Tom Smith</a></h3>
+                            <span class="position">Hair Specialist</span>
+                            <div class="text">
+                                <p>Far far away, behind the word mountains, far from the countries Vokalia and
+                                    Consonantia, there live the blind texts.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="chef-col">
+                    <div class="staff">
+                        <div class="img" style="background-image: url(images/person_1.jpg);"></div>
+                        <div class="info">
+                            <h3><a href="teacher-single.html">Mark Wilson</a></h3>
+                            <span class="position">Beard Specialist</span>
+                            <div class="text">
+                                <p>Far far away, behind the word mountains, far from the countries Vokalia and
+                                    Consonantia, there live the blind texts.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="chef-col">
+                    <div class="staff">
+                        <div class="img" style="background-image: url(images/person_1.jpg);"></div>
+                        <div class="info">
+                            <h3><a href="teacher-single.html">Patrick Jacobson</a></h3>
+                            <span class="position">Hair Stylist</span>
+                            <div class="text">
+                                <p>Far far away, behind the word mountains, far from the countries Vokalia and
+                                    Consonantia, there live the blind texts.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="chef-col">
+                    <div class="staff">
+                        <div class="img" style="background-image: url(images/person_1.jpg);"></div>
+                        <div class="info">
+                            <h3><a href="teacher-single.html">Ivan Dorchsner</a></h3>
+                            <span class="position">Beard Specialist</span>
+                            <div class="text">
+                                <p>Far far away, behind the word mountains, far from the countries Vokalia and
+                                    Consonantia, there live the blind texts.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="">about us</a></li>
+                        <li><a href="">our menu</a></li>
+                        <li><a href="">privacy policy</a></li>
+                        <li><a href="">affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>recent blogs</h4>
+                    <ul class="blog">
+                        <li><a href=""><img src="images/blog/sander-dalhuisen-nA6Xhnq2Od8-unsplash.jpg" alt="">
+                                <div class="text">
+                                    <h3 class="ft-recent-blog"><a href="#">Even the all-powerful Pointing has no control
+                                            about</a>
+                                    </h3>
+                                    <div class="meta">
+                                        <div><a href="#"><span class="icon-calendar"></span> Sept 15, 2018</a></div>
+                                    </div>
+                                </div>
+                            </a></li>
+                        <li><a href=""><img src="images/blog/sander-dalhuisen-nA6Xhnq2Od8-unsplash.jpg" alt="">
+                                <div class="text">
+                                    <h3 class="ft-recent-blog"><a href="#">Even the all-powerful Pointing has no control
+                                            about</a>
+                                    </h3>
+                                    <div class="meta">
+                                        <div><a href="#"><span class="icon-calendar"></span> Sept 15, 2018</a></div>
+                                    </div>
+                                </div>
+                            </a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">shipping</a></li>
+                        <li><a href="">returns</a></li>
+                        <li><a href="">order status</a></li>
+                        <li><a href="">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social">
+                        <a href="#"><svg width="35px" length="auto" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"
+                                    fill="#0F0F0F" />
+                                <path
+                                    d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z"
+                                    fill="#0F0F0F" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z"
+                                    fill="#0F0F0F" />
+                            </svg></a>
+                        <a href="#"><svg fill="#000000" width="35px" length="auto" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 2.03998C6.5 2.03998 2 6.52998 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.84998C10.44 7.33998 11.93 5.95998 14.22 5.95998C15.31 5.95998 16.45 6.14998 16.45 6.14998V8.61998H15.19C13.95 8.61998 13.56 9.38998 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96C15.9164 21.5878 18.0622 20.3855 19.6099 18.57C21.1576 16.7546 22.0054 14.4456 22 12.06C22 6.52998 17.5 2.03998 12 2.03998Z" />
+                            </svg></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js">
+    </script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

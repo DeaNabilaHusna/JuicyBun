@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Please, Complete Your Payment</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- navbar start -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <a href="cart.html">
+                        <svg width="35px" height="auto" viewBox="0 -6.5 38 38" version="1.1"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+                            <title>left-arrow</title>
+                            <desc>Created with Sketch.</desc>
+                            <g id="icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="ui-gambling-website-lined-icnos-casinoshunter"
+                                    transform="translate(-1641.000000, -158.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                                    <g id="1" transform="translate(1350.000000, 120.000000)">
+                                        <path
+                                            d="M317.812138,38.5802109 L328.325224,49.0042713 L328.41312,49.0858421 C328.764883,49.4346574 328.96954,49.8946897 329,50.4382227 L328.998248,50.6209428 C328.97273,51.0514917 328.80819,51.4628128 328.48394,51.8313977 L328.36126,51.9580208 L317.812138,62.4197891 C317.031988,63.1934036 315.770571,63.1934036 314.990421,62.4197891 C314.205605,61.6415481 314.205605,60.3762573 314.990358,59.5980789 L322.274264,52.3739093 L292.99947,52.3746291 C291.897068,52.3746291 291,51.4850764 291,50.3835318 C291,49.2819872 291.897068,48.3924345 292.999445,48.3924345 L322.039203,48.3917152 L314.990421,41.4019837 C314.205605,40.6237427 314.205605,39.3584519 314.990421,38.5802109 C315.770571,37.8065964 317.031988,37.8065964 317.812138,38.5802109 Z"
+                                            id="left-arrow"
+                                            transform="translate(310.000000, 50.500000) scale(-1, 1) translate(-310.000000, -50.500000) ">
+
+                                        </path>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                    <a href="#"><span>Payment</span></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="main-payment">
+        <div class="container" id="blur">
+            <div class="">
+                <h3>Billing Address</h3>
+                <form action="">
+                    Full name
+                    <input type="text" placeholder="Enter Name">
+                    Email
+                    <input type="text" placeholder="Enter Email">
+                    Address
+                    <input type="text" placeholder="Enter Address">
+                    City
+                    <input type="text" placeholder="Enter City">
+                    <div id="zip">
+                        <label for="">State
+                            <select name="" id="">
+                                <option value="">Choose State</option>
+                                <option value="">State 1</option>
+                                <option value="">State 2</option>
+                                <option value="">State 3</option>
+                                <option value="">State 4</option>
+                                <option value="">State 5</option>
+                            </select>
+                        </label>
+                        <label for="">Zip Code
+                            <input type="number" placeholder="Enter Zip Code">
+                        </label></div>
+                </form>
+            </div>
+            <div class="right">
+                <h3>Payment</h3>
+                <form action="">
+                    Accepted Card
+                    <br>
+                    <img src="images/credit_card1.png" alt="">
+                    <img src="images/credit_card2.png" alt="">
+                    <img src="images/credit_card3.png" alt="">
+                    <img src="images/credit_card4.png" alt="">
+
+                    <br>
+                    Credit Card Number
+                    <input type="text" placeholder="Enter Card Number">
+                    Exp Month
+                    <input type="text" placeholder="Enter Month">
+                    <div id="zip">
+                        <label for="">Exp Year
+                            <select name="" id="">
+                                <option value="">Choose Year</option>
+                                <option value="">2023</option>
+                                <option value="">2024</option>
+                                <option value="">2025</option>
+                                <option value="">2026</option>
+                                <option value="">2027</option>
+                            </select>
+                        </label>
+                        <label for="">CVV
+                            <input type="number" placeholder="CVV">
+                        </label></div>
+                    <a href="#popup" onclick="toggle()">
+                        <div class="seeMore"><button href="#popup">Checkout</button></div>
+                    </a>
+                </form>
+            </div>
+        </div>
+        <div id="popup">
+            <div class="content">
+                <h2>Thank You</h2>
+                <p>Your Order Has Been Processed</p>
+                <a href="index.html" onclick="toggle()">
+                    <div class="seeMore"><button>Back to HomePage</button></div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- <script src="main.js"></script> -->
+    <script>
+        function toggle() {
+            var blur = document.getElementById('blur')
+            blur.classList.toggle('active')
+            var popup = document.getElementById('popup')
+            popup.classList.toggle('active')
+        }
+    </script>
+</body>
+
+</html>
